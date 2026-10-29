@@ -51,6 +51,15 @@ public class FactRentalEntity {
     @Column(length = 20)
     private String status;
 
+    @Column(name = "origin_text", length = 200)
+    private String originText;
+
+    @Column(name = "destination_text", length = 200)
+    private String destinationText;
+
+    @Column(name = "bus_id")
+    private UUID busId;
+
     @UpdateTimestamp
     @Column(name = "updated_at", nullable = false)
     private Instant updatedAt;

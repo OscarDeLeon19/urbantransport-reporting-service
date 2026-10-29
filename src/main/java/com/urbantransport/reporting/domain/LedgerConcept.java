@@ -5,6 +5,7 @@ public enum LedgerConcept {
     RENTAL,
     FUEL,
     WORKSHOP,
+    SPARE_PARTS,
     DEPRECIATION,
     DRIVER_PAY
 }

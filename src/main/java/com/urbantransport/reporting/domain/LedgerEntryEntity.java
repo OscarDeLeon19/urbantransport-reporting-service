@@ -40,8 +40,9 @@ public class LedgerEntryEntity {
     @Column(name = "occurred_on", nullable = false)
     private LocalDate occurredOn;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "source_type", nullable = false, length = 30)
-    private String sourceType;
+    private LedgerSourceType sourceType;
 
     @Column(name = "source_id", nullable = false)
     private UUID sourceId;
